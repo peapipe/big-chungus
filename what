@@ -1,0 +1,42 @@
+tank_s = [
+    discord.Embed(title="strv 103").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907993814696886313/images_38.jpeg"
+    ),
+   discord.Embed(title="ADATS").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907993932867190834/images_30.jpeg"
+    ),
+   discord.Embed(title="ZTZ 99A").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907994201407512666/images_13.jpeg"
+    ),
+   discord.Embed(title="lecrec").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907994176841457734/8.jpeg"
+    ),
+   discord.Embed(title="T14 ARMATA").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907994276141621308/images_9.jpeg "
+    ),
+   discord.Embed(title="type 10 hito").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907994201889832980/6.jpeg"
+    ),
+   discord.Embed(title="m1a2sepv3").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907994233070293064/images_11.jpeg"
+    ),
+   discord.Embed(title="leopard2a4").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907995515986260058/images_2.jpeg"
+    ),
+   discord.Embed(title="T15 ARMARTA").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907994031936659516/images_23.jpeg"
+    ),
+   discord.Embed(title="M3 BRADLEY").set_image(
+    url=
+    "https://cdn.discordapp.com/attachments/907634025856901132/907994061602959400/11.jpeg"
+    ),
+]

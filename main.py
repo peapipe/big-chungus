@@ -5,13 +5,10 @@ from random import choice
 import os
 import B
 import traceback
-import http.client
 
 client = commands.Bot(command_prefix="=")
 client.remove_command('help')
-client.remove_command('joke')
-client.remove_command('credits')
-client.remove_command('rasict')
+client.remove_command('search')
 
 @client.event
 async def on_ready():
@@ -78,11 +75,6 @@ code_1 = ["sex", "penis", "cum", "pussy", "dick"]
 code_2 = [":moyai:", ":hot_face:", ":flushed:"]
 
 
-@client.event
-async def on_ready():
-    print(f"We have logged in as {client.user} \nID: {client.user.id}.")
-
-
 @client.command()
 async def on_message(message):
     if message.author == client.user:
@@ -91,11 +83,6 @@ async def on_message(message):
     if message.content.startswith('=coinflip'):
         await message.channel.send(embed=random.choice(coinflip))
 
-
-coinflip1 = [
-    "https://cdn.discordapp.com/attachments/896723560184295486/898186190199586826/head.jpg",
-    "https://cdn.discordapp.com/attachments/896723560184295486/898186176215801856/tails.jpg"
-]
 
 coinflip2 = [
     discord.Embed(title="nice! you got the head :tada:").set_image(
@@ -178,34 +165,120 @@ async def help(ctx):
     embed.add_field(name="=free nitro", value="free nitro!1")
     embed.add_field(name="=real bobux", value="real!1!!1")
     embed.add_field(name="=rasict", value="USE AT YOUR OWN RISK")
-    embed.add_field(name="=tips", value="yeah its just tips")
-    embed.add_field(name="=superidol", value="super idol的笑容都没你的甜")
-    embed.add_field(
-        name="=trigger",
-        value="gives you random trigger phase that will trigger the bot")
     embed.add_field(name="=dice", value="cure ur gambling addiction")
+    embed.add_field(name="=hentai", value=":flushed:")
+    embed.add_field(name="=tanks", value="kaboom")
+    embed.add_field(name="=search", value="search nsfw :flushed:")
     await ctx.send(embed=embed)
+
+
+tank_s = [
+    discord.Embed(title="strv 103").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907993814696886313/images_38.jpeg"
+    ),
+    discord.Embed(title="ADATS").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907993932867190834/images_30.jpeg"
+    ),
+    discord.Embed(title="ZTZ 99A").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907994201407512666/images_13.jpeg"
+    ),
+    discord.Embed(title="lecrec").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907994176841457734/8.jpeg"
+    ),
+    discord.Embed(title="T14 ARMATA").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907994276141621308/images_9.jpeg "
+    ),
+    discord.Embed(title="type 10 hito").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907994201889832980/6.jpeg"
+    ),
+    discord.Embed(title="m1a2sepv3").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907994233070293064/images_11.jpeg"
+    ),
+    discord.Embed(title="leopard2a4").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907995515986260058/images_2.jpeg"
+    ),
+    discord.Embed(title="T15 ARMARTA").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907994031936659516/images_23.jpeg"
+    ),
+    discord.Embed(title="M3 BRADLEY").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907994061602959400/11.jpeg"
+    ),
+    discord.Embed(title="K2 blackpanther").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907994201613037608/images_12.jpeg"
+    ),
+    discord.Embed(title="M1A1HC").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993814969499718/images_37.jpeg?width=598&height=427"
+    ),
+    discord.Embed(title="challanger 1").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907994163281285150/images_14.jpeg"
+    ),
+    discord.Embed(title="challanger 2").set_image(
+        url=
+        "https://cdn.discordapp.com/attachments/907634025856901132/907994176648532038/9.jpeg"
+    ),
+    discord.Embed(title="Centurion ARVE").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993815569293342/14.jpeg"
+    ),
+    discord.Embed(title="ASU-57").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993891440066701/images_33.jpeg?width=569&height=427"
+    ),
+    discord.Embed(title="Flakpanzer Gepard").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993891783974992/images_32.jpeg?width=641&height=427"
+    ),
+    discord.Embed(title="ZSU-23-2 Shilka").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993892027252776/images_31.jpeg"
+    ),
+    discord.Embed(title="Arjun MK2").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993933315969084/13.jpeg"
+    ),
+    discord.Embed(title="Al Khalid").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993933747978280/images_29.jpeg?width=712&height=427"
+    ),
+    discord.Embed(title="9p157-2 khrizantema-s").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993954132324362/images_28.jpeg?width=641&height=427"
+    ),
+    discord.Embed(title="M551 Sheridan").set_image(
+        url=
+        "https://images-ext-2.discordapp.net/external/YcT_2yJRgxhZaVwCBKQqjFDdxsdst1rbGytSlhbpCIc/https/media.discordapp.net/attachments/907634025856901132/907993954526593084/images_27.jpeg"
+    ),
+    discord.Embed(title="Warrior IFV").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993954790801488/images_26.jpeg?width=641&height=427"
+    ),
+    discord.Embed(title="M113 APC").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993979331690496/12.jpeg"
+    ),
+    discord.Embed(title="T-72A").set_image(
+        url=
+        "https://media.discordapp.net/attachments/907634025856901132/907993980124405820/images_24.jpeg"
+    ),
+]
 
 
 @client.command()
-async def tips(ctx):
-    embed = discord.Embed(title="tips for the users")
-    embed.add_field(
-        name="#1 TRIGGER",
-        value="DO NOT FUCKING TRIGGER THIS BOT WITH RACIAL SLURS PHASE")
-    embed.add_field(
-        name="#2 =RASICT",
-        value=
-        "DO NOT USE THIS COMMAND,YOU WILL FUCKING TRIGGER ANYONE IN THE SERVER"
-    )
-    embed.add_field(name="#3 REAL BOBUX",
-                    value="its fake dont use it its 100% fake")
-    embed.add_field(name="#4 =NUKE",
-                    value="its fake it will not nuke the server")
-    embed.add_field(
-        name="#5 FREE NITRO",
-        value="yeah it was same with the nuke it was just a troll command")
-    await ctx.send(embed=embed)
+async def tanks(ctx):
+    await ctx.send(embed=random.choice(tank_s))
 
 
 @client.group(name="poo", invoke_without_command=False)
@@ -232,6 +305,17 @@ async def food(ctx):
     await ctx.send(
         'https://cdn.discordapp.com/attachments/896723560184295486/897065370530242560/9k.png'
     )
+
+
+@client.command()
+async def hentai(ctx):
+    embed = discord.Embed(
+        title="click here to watch hentai:flushed:",
+        url=
+        "https://cdn.discordapp.com/attachments/877459481330597939/907988510785556510/hot_anime_girl_hentai_4k.mp4",
+        description="hof anime hentai 4k :hot_face:",
+        color=0xFF5733)
+    await ctx.send(embed=embed)
 
 
 @food.command()
